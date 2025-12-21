@@ -1,10 +1,15 @@
 #Staff Rules
   🟦 Professional Conduct
 1a. Staff must act professionally at all times — no toxicity, bias, or drama.
+
 1b. No abusing moderation powers — no teleporting, kicking, or banning without purpose.
+
 1c. Staff must treat ALL players fairly — friends do not get special treatment.
+
 1d. Staff cannot argue in public chats — handle disagreements privately or escalate.
+
 1e. Never threaten punishments — enforce rules calmly and explain the reason.
+
 
   🚨 Moderation Rules
 2a. Staff may only moderate situations they witnessed unless valid evidence is provided.
