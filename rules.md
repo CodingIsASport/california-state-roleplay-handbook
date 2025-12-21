@@ -1,5 +1,7 @@
 #Staff Rules
+
   🟦 Professional Conduct
+  
 1a. Staff must act professionally at all times — no toxicity, bias, or drama.
 
 1b. No abusing moderation powers — no teleporting, kicking, or banning without purpose.
@@ -11,27 +13,51 @@
 1e. Never threaten punishments — enforce rules calmly and explain the reason.
 
 
+
   🚨 Moderation Rules
+  
 2a. Staff may only moderate situations they witnessed unless valid evidence is provided.
+
 2b. Punishments must match the offense — do not over-punish.
+
 2c. Staff must log major punishments (kicks, bans, blacklists) when required.
+
 2d. Evidence must be collected for bans — screenshots or clips if possible.
+
 2e. No punishments out of anger — step back if needed.
+
+
+
   📡 Communication & Comms Rules
+  
 3a. Staff must keep communications clear and respectful — no yelling, spam, or clowning during enforcement.
+
 3b. Comms Codes must be followed — correct use of radio signals, priorities, and scene control.
+
 3c. If a senior staff member takes command of a scene, you listen.
 
+
+
   👮 On-Duty Rules
+  
 4a. Staff must announce when they are moderating (ex: “Staff on scene”).
+
 4b. Staff cannot RP while actively staffing — choose one or the other.
+
 4c. Staff uniforms or tags must be worn during enforcement.
+
 4d. Do not interfere with active RP unless a rule is violated.
 
+
+
   🛑 Boundary Rules
+  
 5a. No favoritism toward departments, friends, or groups.
+
 5b. No leaking internal information, staff chats, or reports.
+
 5c. Staff must respect rank hierarchy and accept decisions from leadership.
+
 
 
 # Player Rules
