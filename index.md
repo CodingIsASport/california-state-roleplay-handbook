@@ -10,3 +10,10 @@ This site includes:
 - Communications procedures
 
 Only authorized staff may enforce these policies.
+
+### Pages
+- [Staff Rules](rules.md)
+- [Moderation Procedures](moderation.md)
+- [Punishment Guide](punishments.md)
+- [Chain of Command](chain-of-command.md)
+- [Communications Code](comms-code.md)
