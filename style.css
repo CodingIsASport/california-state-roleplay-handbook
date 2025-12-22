@@ -1,112 +1,104 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Body */
+/* ==== GENERAL BODY ==== */
 body {
-  background-color: #0b0c10; /* dark black background */
-  color: #c5c6c7; /* light gray text */
-  line-height: 1.6;
+    background-color: #0f0f0f;
+    color: #e5e5e5;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header / Banner */
-header {
-  background-color: #1f2833; /* dark gray/black */
-  padding: 20px;
-  text-align: center;
-  border-bottom: 3px solid #45a29e; /* blue accent */
+/* ==== NAVIGATION BAR ==== */
+nav.navbar {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    border-bottom: 2px solid #333;
 }
 
-header h1 {
-  color: #45a29e;
-  font-size: 2.5rem;
-  margin-bottom: 5px;
+nav.navbar .nav-title {
+    color: #4eaaff;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-header p {
-  color: #66fcf1;
-  font-size: 1.1rem;
+nav.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigation Bar */
-nav {
-  background-color: #0b0c10;
-  display: flex;
-  justify-content: center;
-  border-bottom: 2px solid #45a29e;
+nav.navbar ul li {
+    margin-left: 20px;
 }
 
-nav a {
-  color: #c5c6c7;
-  text-decoration: none;
-  padding: 15px 20px;
-  transition: 0.3s;
-  font-weight: bold;
+nav.navbar ul li a {
+    text-decoration: none;
+    color: #e5e5e5;
+    font-weight: bold;
+    transition: 0.2s;
 }
 
-nav a:hover {
-  color: #45a29e;
-  background-color: #1f2833;
-  border-radius: 5px;
+nav.navbar ul li a:hover,
+nav.navbar ul li a.active {
+    color: #4eaaff;
 }
 
-/* Active nav link */
-nav a.active {
-  color: #45a29e;
-  border-bottom: 2px solid #45a29e;
+/* ==== HEADER ==== */
+header.page-header {
+    padding: 40px;
+    text-align: center;
+    background-color: #121212;
+    border-bottom: 2px solid #333;
 }
 
-/* Main Content Area */
-main {
-  max-width: 1000px;
-  margin: 20px auto;
-  padding: 0 20px;
+header.page-header h1 {
+    color: #4eaaff;
+    margin-bottom: 10px;
 }
 
-/* Section Titles */
-h2 {
-  color: #45a29e;
-  margin-top: 20px;
-  margin-bottom: 10px;
+header.page-header p {
+    color: #cccccc;
 }
 
-/* Section Cards */
-section {
-  background-color: #1f2833;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-left: 5px solid #45a29e;
-  border-radius: 8px;
+/* ==== MAIN CONTENT ==== */
+main.content-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
 }
 
-/* Buttons */
-.button {
-  display: inline-block;
-  background-color: #45a29e;
-  color: #0b0c10;
-  padding: 10px 20px;
-  margin: 10px 0;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: 0.3s;
+main.content-container .rule-section {
+    margin-bottom: 30px;
 }
 
-.button:hover {
-  background-color: #66fcf1;
-  color: #0b0c10;
+main.content-container h2 {
+    color: #ffaa4e;
+    margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
-  background-color: #1f2833;
-  color: #c5c6c7;
-  text-align: center;
-  padding: 15px;
-  border-top: 3px solid #45a29e;
-  margin-top: 30px;
+main.content-container ul {
+    margin-left: 20px;
+}
+
+/* ==== LEVEL/CHAIN SECTIONS ==== */
+.level {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #121212;
+}
+
+/* ==== FOOTER ==== */
+footer.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    border-top: 2px solid #333;
+    color: #999;
+    margin-top: 40px;
 }
