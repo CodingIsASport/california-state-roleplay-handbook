@@ -1,104 +1,50 @@
-/* ==== GENERAL BODY ==== */
 body {
     background-color: #0f0f0f;
     color: #e5e5e5;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* ==== NAVIGATION BAR ==== */
-nav.navbar {
-    background-color: #121212;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 40px;
-    border-bottom: 2px solid #333;
-}
-
-nav.navbar .nav-title {
-    color: #4eaaff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-nav.navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav.navbar ul li {
-    margin-left: 20px;
-}
-
-nav.navbar ul li a {
-    text-decoration: none;
-    color: #e5e5e5;
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-nav.navbar ul li a:hover,
-nav.navbar ul li a.active {
-    color: #4eaaff;
-}
-
-/* ==== HEADER ==== */
-header.page-header {
     padding: 40px;
-    text-align: center;
-    background-color: #121212;
-    border-bottom: 2px solid #333;
 }
 
-header.page-header h1 {
-    color: #4eaaff;
-    margin-bottom: 10px;
-}
+h1 { color: #4eaaff; margin-bottom: 10px; }
+h2 { color: #ffaa4e; margin-top: 25px; margin-bottom: 10px; }
+ul { margin-left: 20px; margin-bottom: 15px; }
 
-header.page-header p {
-    color: #cccccc;
-}
-
-/* ==== MAIN CONTENT ==== */
-main.content-container {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
-}
-
-main.content-container .rule-section {
+header {
     margin-bottom: 30px;
+    text-align: center;
 }
 
-main.content-container h2 {
-    color: #ffaa4e;
-    margin-bottom: 10px;
-}
-
-main.content-container ul {
-    margin-left: 20px;
-}
-
-/* ==== LEVEL/CHAIN SECTIONS ==== */
-.level {
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 6px;
-    border: 1px solid #333;
+.navbar {
     background-color: #121212;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #333;
 }
 
-/* ==== FOOTER ==== */
-footer.footer {
+.navbar a {
+    color: #e5e5e5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #4eaaff;
+}
+
+.section {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+footer {
     text-align: center;
     padding: 20px;
-    background-color: #121212;
     border-top: 2px solid #333;
-    color: #999;
     margin-top: 40px;
+    color: #999;
 }
