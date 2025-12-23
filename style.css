@@ -48,3 +48,13 @@ footer {
     margin-top: 40px;
     color: #999;
 }
+
+.site-logo {
+    width: 160px;
+    max-width: 70%;
+    margin-bottom: 15px;
+}
+
+.home-header {
+    text-align: center;
+}
