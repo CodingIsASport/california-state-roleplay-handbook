@@ -1,86 +1,91 @@
-
-/* GLOBAL RESET + BACKGROUND */
+/* =========================
+   GLOBAL RESET & BASE THEME
+   ========================= */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0f172a; /* dark navy */
-    color: #e5e7eb; /* light text */
-}
-
-<script src="auth.js"></script>
-
-body {
-    background-color: #0f0f0f;
-    color: #e5e5e5;
-    font-family: Arial, sans-serif;
+    color: #e5e7eb;
     line-height: 1.6;
-    padding: 40px;
 }
 
-h1 { color: #4eaaff; margin-bottom: 10px; }
-h2 { color: #ffaa4e; margin-top: 25px; margin-bottom: 10px; }
-ul { margin-left: 20px; margin-bottom: 15px; }
-
-header {
-    margin-bottom: 30px;
-    text-align: center;
+/* =========================
+   HEADERS & TEXT
+   ========================= */
+h1 {
+    color: #4eaaff;
+    margin-bottom: 10px;
 }
 
+h2 {
+    color: #ffaa4e;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
 .navbar {
-    background-color: #121212;
+    background-color: #0b0f1a;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    border-bottom: 2px solid #333;
+    padding: 12px 0;
+    border-bottom: 2px solid #1f2a44;
 }
 
 .navbar a {
-    color: #e5e5e5;
+    color: #e5e7eb;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
 }
 
-.navbar a.active,
-.navbar a:hover {
+.navbar a:hover,
+.navbar a.active {
     color: #4eaaff;
 }
 
+/* =========================
+   PAGE HEADER
+   ========================= */
+.page-header {
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #1f2a44;
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
 .section {
-    margin-top: 40px;
-    border-top: 1px solid #333;
+    margin-top: 35px;
     padding-top: 20px;
+    border-top: 1px solid #1f2a44;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 2px solid #333;
-    margin-top: 40px;
-    color: #999;
-}
-
-.site-logo {
-    width: 160px;
-    max-width: 70%;
-    margin-bottom: 15px;
-}
-
-.home-header {
-    text-align: center;
-}
-
-/* STAFF PAGE LAYOUT */
+/* =========================
+   STAFF PAGE LAYOUT
+   ========================= */
 .staff-layout {
     display: flex;
     gap: 20px;
+    padding: 30px;
 }
 
-/* SIDEBAR */
+/* =========================
+   STAFF SIDEBAR
+   ========================= */
 .staff-sidebar {
     width: 260px;
     background: #0b0f1a;
@@ -90,19 +95,21 @@ footer {
 }
 
 .staff-sidebar h3 {
-    color: #4da3ff;
+    color: #4eaaff;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-/* DROPDOWN SECTIONS */
+/* =========================
+   DROPDOWN TRAINING SECTIONS
+   ========================= */
 .dropdown {
     margin-bottom: 12px;
 }
 
 .dropdown summary {
     cursor: pointer;
-    font-weight: 600;
+    font-weight: bold;
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
@@ -130,10 +137,23 @@ footer {
 }
 
 .dropdown ul li a:hover {
-    color: #4da3ff;
+    color: #4eaaff;
 }
 
-/* MAIN STAFF CONTENT */
+/* =========================
+   MAIN STAFF CONTENT
+   ========================= */
 .staff-content {
     flex: 1;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #1f2a44;
+    margin-top: 40px;
+    color: #9ca3af;
 }
