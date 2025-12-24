@@ -14,6 +14,13 @@ body {
     line-height: 1.6;
 }
 
+.site-logo {
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
 /* =========================
    HEADERS & TEXT
    ========================= */
