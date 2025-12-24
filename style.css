@@ -58,3 +58,67 @@ footer {
 .home-header {
     text-align: center;
 }
+
+/* STAFF PAGE LAYOUT */
+.staff-layout {
+    display: flex;
+    gap: 20px;
+}
+
+/* SIDEBAR */
+.staff-sidebar {
+    width: 260px;
+    background: #0b0f1a;
+    border: 1px solid #1f2a44;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.staff-sidebar h3 {
+    color: #4da3ff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* DROPDOWN SECTIONS */
+.dropdown {
+    margin-bottom: 12px;
+}
+
+.dropdown summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    background: #121a2f;
+}
+
+.dropdown summary:hover {
+    background: #1b2a4a;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding-left: 12px;
+    margin-top: 8px;
+}
+
+.dropdown ul li {
+    margin-bottom: 6px;
+}
+
+.dropdown ul li a {
+    color: #b6ccff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown ul li a:hover {
+    color: #4da3ff;
+}
+
+/* MAIN STAFF CONTENT */
+.staff-content {
+    flex: 1;
+}
