@@ -142,5 +142,62 @@
     <p>© 2025 California State Roleplay — All Rights Reserved</p>
 </footer>
 
+    <script>
+/* ============================
+   AUTH + ROLE CONTROL SCRIPT
+   ============================ */
+
+// Check login
+const role = localStorage.getItem("role");
+
+if (!role) {
+    window.location.href = "login.html";
+}
+
+/*
+ROLE DEFINITIONS:
+low     = Moderator / Junior Staff
+high    = Administrator / IA
+senior  = Management
+exec    = Executive / Director
+*/
+
+// Utility function (safe removal)
+function hide(id) {
+    const el = document.getElementById(id);
+    if (el) el.remove();
+}
+
+// ROLE-BASED VISIBILITY
+switch (role) {
+    case "low":
+        hide("high-training");
+        hide("senior-training");
+        hide("exec-training");
+        break;
+
+    case "high":
+        hide("senior-training");
+        hide("exec-training");
+        break;
+
+    case "senior":
+        hide("exec-training");
+        break;
+
+    case "exec":
+        // Full access
+        break;
+
+    default:
+        // Unknown role → force logout
+        localStorage.clear();
+        window.location.href = "login.html";
+}
+
+// OPTIONAL: Display logged-in role (if you add an element later)
+document.getElementById("staff-role")?.textContent = role.toUpperCase();
+</script>
+
 </body>
 </html>
