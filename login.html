@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Staff Login — California State Roleplay</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-box">
+  <h1>Staff Login</h1>
+
+  <input id="username" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+
+  <button onclick="login()">Login</button>
+  <p id="error"></p>
+</div>
+
+<script src="accounts.js"></script>
+<script>
+function login() {
+  const u = username.value;
+  const p = password.value;
+
+  if (accounts[u] && accounts[u].password === p) {
+    localStorage.setItem("role", accounts[u].role);
+    localStorage.setItem("user", u);
+    window.location.href = "staff.html";
+  } else {
+    document.getElementById("error").textContent = "Invalid credentials";
+  }
+}
+</script>
+
+</body>
+</html>
