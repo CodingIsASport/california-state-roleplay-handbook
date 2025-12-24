@@ -6,6 +6,7 @@
 <title>Staff — California State Roleplay</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- NAVIGATION -->
@@ -32,6 +33,7 @@
     <aside class="staff-sidebar">
         <h3>Training Resources</h3>
 
+        <!-- LOW RANK (VISIBLE TO ALL) -->
         <details class="dropdown">
             <summary>Low Rank Training</summary>
             <ul>
@@ -40,7 +42,8 @@
             </ul>
         </details>
 
-        <details class="dropdown">
+        <!-- HIGH RANK -->
+        <details class="dropdown" id="high-training">
             <summary>High Rank Training</summary>
             <ul>
                 <li><a href="#">Senior Administrator Guide</a></li>
@@ -49,7 +52,8 @@
             </ul>
         </details>
 
-        <details class="dropdown">
+        <!-- SENIOR HIGH RANK -->
+        <details class="dropdown" id="senior-training">
             <summary>Senior High Rank</summary>
             <ul>
                 <li><a href="#">Management Training</a></li>
@@ -57,7 +61,8 @@
             </ul>
         </details>
 
-        <details class="dropdown">
+        <!-- EXECUTIVE -->
+        <details class="dropdown" id="exec-training">
             <summary>Executive Board</summary>
             <ul>
                 <li><a href="#">Executive Operations Guide</a></li>
@@ -66,24 +71,24 @@
         </details>
     </aside>
 
-    <!-- STAFF CONTENT -->
+    <!-- CONTENT -->
     <div class="staff-content">
 
         <section class="section">
             <h2>1. Staff Authority & Purpose</h2>
             <p>
-                Staff members are responsible for enforcing server rules, maintaining fair roleplay,
-                and ensuring a professional and enjoyable environment for all players.
+                Staff members are entrusted with enforcing server rules, ensuring fair roleplay,
+                and maintaining a professional environment across all California State Roleplay platforms.
             </p>
         </section>
 
         <section class="section">
             <h2>2. Staff Roles & Permissions</h2>
             <ul>
-                <li><strong>Director Level:</strong> Final authority over all server and staff decisions.</li>
-                <li><strong>Executive Board:</strong> Oversees server operations, policy enforcement, and staff leadership.</li>
-                <li><strong>Senior High Rank:</strong> Manages investigations, staff discipline, and administrator oversight.</li>
-                <li><strong>High Rank:</strong> Performs active moderation and punishment enforcement.</li>
+                <li><strong>Director / Executive:</strong> Final authority over all staff and server operations.</li>
+                <li><strong>Executive Board:</strong> Oversees policy, leadership, and long-term direction.</li>
+                <li><strong>Senior High Rank:</strong> Handles investigations, discipline, and administration oversight.</li>
+                <li><strong>High Rank:</strong> Performs moderation, enforcement, and staff supervision.</li>
                 <li><strong>Low Rank:</strong> Entry-level staff under supervision and training.</li>
             </ul>
         </section>
@@ -91,10 +96,10 @@
         <section class="section">
             <h2>3. Staff Code of Conduct</h2>
             <ul>
-                <li>Staff must act professionally at all times.</li>
-                <li>Abuse of power, favoritism, or bias is prohibited.</li>
-                <li>All staff actions must align with server policies.</li>
-                <li>Respect the Chain of Command at all times.</li>
+                <li>Staff must remain professional at all times.</li>
+                <li>Abuse of power, bias, or favoritism is prohibited.</li>
+                <li>All actions must align with written policy.</li>
+                <li>The Chain of Command must be respected.</li>
             </ul>
         </section>
 
@@ -102,8 +107,8 @@
             <h2>4. Communication & Activity</h2>
             <ul>
                 <li>Staff must monitor in-game and Discord communications while on duty.</li>
-                <li>Tickets and reports must be handled promptly.</li>
-                <li>Activity requirements are set by management and enforced consistently.</li>
+                <li>Reports and tickets must be handled promptly.</li>
+                <li>Activity expectations are enforced by management.</li>
             </ul>
         </section>
 
@@ -112,25 +117,25 @@
             <ul>
                 <li>Required training must be completed before active moderation.</li>
                 <li>Probationary staff must shadow senior staff.</li>
-                <li>All punishments and incidents must be properly logged.</li>
+                <li>All incidents and punishments must be logged.</li>
             </ul>
         </section>
 
         <section class="section">
             <h2>6. Discipline & Strikes</h2>
             <ul>
-                <li>Violations of staff policy may result in strikes, suspension, or removal.</li>
-                <li>Serious offenses may result in immediate termination.</li>
-                <li>Disciplinary actions are reviewed by management.</li>
+                <li>Violations may result in strikes, suspension, or termination.</li>
+                <li>Severe misconduct may result in immediate removal.</li>
+                <li>Disciplinary decisions are reviewed by management.</li>
             </ul>
         </section>
 
         <section class="section">
             <h2>7. Professional Expectations</h2>
             <ul>
-                <li>Lead by example in all interactions.</li>
-                <li>Remain calm and respectful in stressful situations.</li>
-                <li>Mentor and support lower-ranked staff.</li>
+                <li>Lead by example.</li>
+                <li>Remain calm in high-pressure situations.</li>
+                <li>Support and mentor lower-ranked staff.</li>
             </ul>
         </section>
 
@@ -142,33 +147,19 @@
     <p>© 2025 California State Roleplay — All Rights Reserved</p>
 </footer>
 
-    <script>
-/* ============================
-   AUTH + ROLE CONTROL SCRIPT
-   ============================ */
-
-// Check login
+<!-- ROLE ACCESS SCRIPT -->
+<script>
 const role = localStorage.getItem("role");
 
 if (!role) {
     window.location.href = "login.html";
 }
 
-/*
-ROLE DEFINITIONS:
-low     = Moderator / Junior Staff
-high    = Administrator / IA
-senior  = Management
-exec    = Executive / Director
-*/
-
-// Utility function (safe removal)
 function hide(id) {
     const el = document.getElementById(id);
     if (el) el.remove();
 }
 
-// ROLE-BASED VISIBILITY
 switch (role) {
     case "low":
         hide("high-training");
@@ -186,17 +177,12 @@ switch (role) {
         break;
 
     case "exec":
-        // Full access
         break;
 
     default:
-        // Unknown role → force logout
         localStorage.clear();
         window.location.href = "login.html";
 }
-
-// OPTIONAL: Display logged-in role (if you add an element later)
-document.getElementById("staff-role")?.textContent = role.toUpperCase();
 </script>
 
 </body>
